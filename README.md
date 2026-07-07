@@ -6,3 +6,5 @@ EfficientNet-B0 전이학습 + 3종 모델 앙상블로 real/fake를 분류.
 (Test AUC 0.70).
 
 ** 초상권을 침해하는 영상이나 추출된 프레임 등은 포함하지 않음.
+
+`Python` `PyTorch` `EfficientNet` `OpenCV` `Grad-CAM`
