@@ -6,7 +6,9 @@ Grad-CAM으로 판별 근거를 시각화하고, 프레임 단위 학습의 한�
 
 **단일 EfficientNet-B0 Test AUC 0.7027 → 앙상블 0.7045** · 인공지능 수업 팀 프로젝트 (5인, 조장)
 
-프로젝트 상세 → [Notion 포트폴리오](노션 딥페이크 페이지 링크)
+**프로젝트 상세 → [Notion 포트폴리오](https://zany-meeting-aba.notion.site/30583f9aaedb83509e0e81ed3e56fa49)**
+
+**발표 자료 → [Google Drive](https://drive.google.com/drive/folders/1Yw1ZkKn_484lvV0iVR_mV13tE-LBxdNH)**
 
 ## 핵심 포인트
 - **누수 없는 분할**: 같은 영상의 프레임이 Train/Val/Test에 섞이지 않도록 Video ID 기준 분할, EDA에서 누수·Split 공정성 검증
