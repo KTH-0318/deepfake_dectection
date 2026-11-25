@@ -15,6 +15,11 @@ Grad-CAM으로 판별 근거를 시각화하고, 프레임 단위 학습의 한�
 - **샘플링**: 영상당 최대 50프레임, Real/Fake·데이터셋 비율 유지 → Train 21,325 / Val 6,128 / Test 3,074
 - **학습 전략**: Label Smoothing 0.1 · Dropout 0.6 · AdamW(5e-4) · Early Stopping(Val AUC) · MixUp · Backbone Freeze · AMP · Cosine + ReduceLROnPlateau
 
+## 내 역할 (조장)
+- 처음 ResNet18·일반 CNN으로 500장을 학습했을 때 정확도가 지나치게 높게 나와 데이터를 다시 확인 → KoDF는 진짜 19명·가짜 30명의 얼굴뿐이라 같은 사람이 학습과 평가에 함께 들어간 것을 발견, 팀에 공유하고 얼굴 800명인 FF++로 먼저 진행하도록 제안
+- 이후 영상(Video ID) 단위 분할로 데이터셋 재구성
+- 팀원들이 나눠 맡은 EfficientNet-B4·B3·ResNet-50을 GPU 환경에서 모두 학습시키고 앙상블까지 실행 · Early Stopping·MixUp·Backbone Freeze 적용 · Grad-CAM 시각화
+
 ## 결과
 | 모델 | Accuracy | F1 | AUC |
 |---|---|---|---|
